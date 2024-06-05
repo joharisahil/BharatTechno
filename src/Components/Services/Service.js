@@ -1,33 +1,31 @@
-import {React, useEffect} from 'react'
-import './Service.css'
-import OurServices from './OurServices/OurServices';
-import FooterSocialMedia from '../Footer-Social-Media/FooterSocialMedia';
+import { React, useEffect } from "react";
+import "./Service.css";
+import OurServices from "./OurServices/OurServices";
+import FooterSocialMedia from "../Footer-Social-Media/FooterSocialMedia";
 
 function Service() {
-      useEffect(() => {
-          window.scrollTo(0, 0);
-      }, []);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    
-      <>
-          <div className="service-main">
-              <div className="service-haading">
-                  <h1>You Envision, We Deliver</h1>
-              </div>
-              <div className="service-content">
-                  <p>
-                      Cynthronix is an evolving family of experienced, dedicated,
-                      determined, and skilled resources who strives to see you
-                      and your product grow and achieve new heights.
-                  </p>
-              </div>
-          </div>
-          <OurServices></OurServices>
-          <FooterSocialMedia></FooterSocialMedia>
-      </>
+    <>
+      <div className="service-main">
+        <div className="service-haading">
+          <h1>Empowering Innovation, Simplifying Complexity</h1>
+        </div>
+        <div className="service-content">
+          <p>
+            Empowering businesses with our advanced Attendance Marking Systems,
+            ERP solutions, and Learning Management Systems, integrated
+            seamlessly with our cutting-edge GPS technology.
+          </p>
+        </div>
+      </div>
+      <OurServices></OurServices>
+      <FooterSocialMedia></FooterSocialMedia>
+    </>
   );
 }
 
-export default Service
+export default Service;
