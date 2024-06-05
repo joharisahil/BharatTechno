@@ -19,6 +19,11 @@ function ContactForm() {
     window.open(gmailUrl, "_blank"); // Replace this URL with the Gmail URL
   };
 
+  const handleLinkedin = (event) => {
+    event.preventDefault();
+    const linkedin = `https://www.linkedin.com/company/techeefy-com/`;
+    window.open(linkedin, "blank");
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -58,7 +63,7 @@ function ContactForm() {
           <div>
             <h5>
               If you have project requirements or you feel like knowing
-              Cynthronix, just the fill the form and we are just a click away.
+              techeefy, just the fill the form and we are just a click away.
             </h5>
           </div>
           <div>
@@ -67,7 +72,7 @@ function ContactForm() {
                 <AiOutlineMail></AiOutlineMail>
               </li>
               <li onClick={redirectToGmail} target="_blank">
-                <h6>cynthronix@gmail.com</h6>
+                <h6>sales.techeefy@gmail.com</h6>
               </li>
             </ul>
           </div>
@@ -86,8 +91,8 @@ function ContactForm() {
               <li>
                 <CiLinkedin></CiLinkedin>
               </li>
-              <li>
-                <h6>Reach Us</h6>
+              <li onClick={handleLinkedin} target="_blank">
+                Reach Us
               </li>
             </ul>
           </div>
